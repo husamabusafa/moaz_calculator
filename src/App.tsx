@@ -3,7 +3,7 @@ import { useState } from "react";
 function App() {
   const [display, setDisplay] = useState("");
 
-  const handleClick = (value) => {
+  const handleClick = (value:any) => {
     if (value === "=") {
       try {
         setDisplay(String(eval(display)));
